@@ -1,0 +1,57 @@
+.carousel {
+  position: relative;
+  /* Posicionamiento relativo para que los botones se posicionen en relación a este contenedor */
+  max-width: 600px;
+  /* Ancho máximo del carrusel */
+  margin: auto;
+  /* Centrado horizontal del carrusel */
+  overflow: hidden;
+  /* Oculta el contenido que se desborda del contenedor */
+}
+
+.carousel-content {
+  display: flex;
+  /* Coloca las imágenes en una fila horizontal */
+}
+
+.carousel-content img {
+  width: 100%;
+  /* Cada imagen ocupa el 100% del contenedor */
+  display: none;
+  /* Las imágenes están ocultas por defecto */
+}
+
+.carousel-content img.active {
+  display: block;
+  /* Solo la imagen activa se muestra */
+}
+
+button {
+  position: absolute;
+  /* Posicionamiento absoluto dentro del contenedor del carrusel */
+  top: 50%;
+  /* Centrado vertical */
+  transform: translateY(-50%);
+  /* Ajuste para centrar completamente verticalmente */
+  background: rgba(0, 0, 0, 0.5);
+  /* Fondo semitransparente negro */
+  color: white;
+  /* Texto blanco */
+  border: none;
+  /* Sin bordes */
+  padding: 10px;
+  /* Relleno del botón */
+  cursor: pointer;
+  /* Cursor de puntero al pasar sobre el botón */
+}
+
+#prevBtn {
+  left: 0;
+  /* Posiciona el botón de retroceso a la izquierda */
+}
+
+#nextBtn {
+  right: 0;
+  /* Posiciona el botón de avance a la derecha */
+}
+
